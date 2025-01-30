@@ -13,7 +13,7 @@ ip -4 addr show dev lo
 ip -6 addr show dev lo
 ```
 
-By default, some addresses may not be assigned to your machine. You can manually add them as a loopback alias:
+By default, some addresses may not be assigned to your machine. You can manually add them as a loopback alias
 ```bash
 sudo ip addr add 127.0.0.42/32 dev lo
 ```
