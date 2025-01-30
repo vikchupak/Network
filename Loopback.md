@@ -17,3 +17,8 @@ By default, some addresses may not be assigned to your machine. You can manually
 ```bash
 sudo ip addr add 127.0.0.42/32 dev lo
 ```
+
+If you added more loopback IPs (e.g., 127.0.0.42), they would also appear under `inet` entries. You can list all loopback IPs using
+```bash
+ip addr show dev lo
+```
