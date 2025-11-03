@@ -30,7 +30,7 @@
   - `CNAME www example.com.` > www.example.com and example.com > resolves to the same IP
   - `CNAME blog example.com.` > blog.example.com and example.com > resolves to the same IP
   - `CNAME static other.domain.com.` > static.example.com resoves to another IP, but it is still Hostname subdomain, not delegated.
-- Delegated Subdomain points/resolves to other IPs
+- Delegated Subdomain managed by other Authoritative Zone
   - NS hr ns1.hrvendor.com. > points to delegate Authoritative NS that "create" another Zone > resolves to another IP
 
 ### The Parent Zone File: `example.com`
