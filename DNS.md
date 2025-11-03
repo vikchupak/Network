@@ -2,7 +2,7 @@
 - Zone Files - text files with DNS records
 - A DNS Zone is served by a set of one or more Authoritative Name Servers (NS)
 
-- Registrar - A company accredited by ICANN (or a local authority) to sell and manage domain names to the public (the consumer). **Domain seller**. Manages the domain on your behalf.
+- Registrar - A company accredited by ICANN (or a local authority) to sell and manage domain names to the public (the consumer). **Domain seller**. Manages the domain on your behalf. SLD is buyable.
 - Registrant - is the individual or organization that holds the rights to use the domain name - cutomer. **Domain buyer/owner**.
 - Registry - The organization that operates the database for all domain names under a specific Top-Level Domain (TLD), such as .com, .org, or .net.
 
