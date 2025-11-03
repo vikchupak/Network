@@ -11,6 +11,7 @@
 ### Hostname Subdomain vs Delegated Subdomain
 
 - `blog.example.com.` - blog - Hostname Subdomain
+- `static.example.com.` - static - Hostname Subdomain
 - `hr.example.com.` - hr - Delegated Subdomain
 
 ## The DNS Zone Hierarchy
@@ -26,8 +27,9 @@
 | **4. Delegated Sub-Zone** | **`hr.example.com`** | A Separate Administrator/Team | An entirely **independent zone** created when the SLD owner places NS records into the SLD zone, transferring administrative control of that part of the namespace. |
 
 - Hostname Subdomain points/resolves to the naked domain (They are in the same SLD Zone).
-  - CNAME www example.com > www.example.com and example.com > resolves to the same IP
-  - CNAME blog example.com > blog.example.com and example.com > resolves to the same IP
+  - `CNAME www example.com.` > www.example.com and example.com > resolves to the same IP
+  - `CNAME blog example.com.` > blog.example.com and example.com > resolves to the same IP
+  - `CNAME static other.domain.com.` > static.example.com resoves to another IP, but it is still Hostname subdomain, not delegated.
 - Delegated Subdomain points/resolves to other IPs
   - NS hr ns1.hrvendor.com. > points to delegate NS that "create" another Zone > resolves to another IP
 
