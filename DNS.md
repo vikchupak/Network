@@ -15,6 +15,9 @@
 
 ## The DNS Zone Hierarchy
 
+- Top Level Domain (TLD)
+- Secondary Level Domain (SLD)
+
 | Zone Level | Example | Administrator | Key Role in DNS |
 | :--- | :--- | :--- | :--- |
 | **1. Root Zone** | **`.`** (the dot) | ICANN/IANA | The top-most zone; contains the authoritative NS records for all TLDs. |
