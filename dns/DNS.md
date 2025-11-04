@@ -1,3 +1,10 @@
+### Acronym
+
+- Top Level Domain (TLD)
+- Secondary Level Domain (SLD)
+
+### Definitions
+
 - Authoritative Name Servers (NS) - servers that **host** Zone Files & **Zones**
   - Authoritative - contains real records
 - Zone Files - text files with DNS records
@@ -16,9 +23,6 @@
 - `hr.example.com.` - hr - Delegated Subdomain
 
 ## The DNS Zone Hierarchy
-
-- Top Level Domain (TLD)
-- Secondary Level Domain (SLD)
 
 | Zone Level | Example | Administrator | Key Role in DNS |
 | :--- | :--- | :--- | :--- |
