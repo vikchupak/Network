@@ -56,6 +56,6 @@ The **`hr` NS records** above tell the world that the `example.com` zone is no l
 | Record Type | Host | Value | Purpose |
 | :--- | :--- | :--- | :--- |
 | **SOA** | `@` | ... | Declares the Start of Authority for the **new `hr.example.com` zone**. |
-| **A** | **`@`** | `198.51.100.20` | Defines the IP for the main HR homepage (`hr.example.com`). |
+| **A** | **`@`** | `198.51.100.20` | Defines the IP for the main HR homepage `hr.example.com`. |
 | **NS** | `@` | `ns1.hrvendor.com.` | The servers that are authoritative for this new HR zone. |
 | **NS** | `@` | `ns2.hrvendor.com.` | |
