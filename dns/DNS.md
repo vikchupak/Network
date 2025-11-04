@@ -38,11 +38,11 @@
 - Delegated Subdomain managed by other Authoritative Zone
   - NS hr ns1.hrvendor.com. > points to delegate Authoritative NS that "create" another Zone > resolves to another IP
 
-### The Parent Zone File: `example.com`
+### The Parent Zone File: `@ = example.com`
 
 | Record Type | Host | Value | Purpose |
 | :--- | :--- | :--- | :--- |
-| **A** | `www` | `192.0.2.10` | Standard A record for the main website. |
+| **A** | `@` | `192.0.2.10` | Defines the IP for `example.com`. |
 | **NS** | `@` | `ns1.examplehost.com.` | Authoritative servers for the main `example.com` zone. |
 | **NS** | `@` | `ns2.examplehost.com.` | |
 | **NS** | **`hr`** | **`ns1.hrvendor.com.`** | **DELEGATION:** These NS records delegate the authority for `hr.example.com` to a new server set. |
@@ -50,12 +50,11 @@
 
 The **`hr` NS records** above tell the world that the `example.com` zone is no longer responsible for answering queries for `hr.example.com`—it has passed that job to the servers at `ns1.hrvendor.com` and `ns2.hrvendor.com`.
 
-### The Delegated Zone File: `hr.example.com`
+### The Delegated Zone File: `@ = hr.example.com`
 
 | Record Type | Host | Value | Purpose |
 | :--- | :--- | :--- | :--- |
 | **SOA** | `@` | ... | Declares the Start of Authority for the **new `hr.example.com` zone**. |
+| **A** | **`@`** | `198.51.100.20` | Defines the IP for the main HR homepage (`hr.example.com`). |
 | **NS** | `@` | `ns1.hrvendor.com.` | The servers that are authoritative for this new HR zone. |
 | **NS** | `@` | `ns2.hrvendor.com.` | |
-| **A** | **`@`** | `198.51.100.20` | Defines the IP for the main HR homepage (`hr.example.com`). |
-| **A** | **`benefits`** | `198.51.100.21` | Defines the IP for a sub-subdomain (`benefits.hr.example.com`). |
