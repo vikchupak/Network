@@ -1,4 +1,4 @@
-- Authoritative Name Servers (NS) - servers that host Zone Files & **Zones**. Usually SLD
+- Authoritative Name Servers (NS) - servers that **host** Zone Files & **Zones**
   - Authoritative - contains real records
 - Zone Files - text files with DNS records
 - A DNS Zone is served by a set of one or more Authoritative Name Servers (NS)
