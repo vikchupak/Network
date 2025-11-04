@@ -42,6 +42,7 @@
 
 | Record Type | Host | Value | Purpose |
 | :--- | :--- | :--- | :--- |
+| **SOA** | `@` | ... | Declares the Start of Authority for the **`example.com` zone**. |
 | **A** | `@` | `192.0.2.10` | Defines the IP for `example.com`. |
 | **NS** | `@` | `ns1.examplehost.com.` | Authoritative servers for the main `example.com` zone. |
 | **NS** | `@` | `ns2.examplehost.com.` | |
