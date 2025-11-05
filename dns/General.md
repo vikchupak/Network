@@ -8,3 +8,13 @@
 - 13 Root servers
 - 12 org manage root servers
 - IANA handles the technical root zone management
+
+---
+
+- Client DNS resolver
+- Recursive DNS resolver/server
+- Iterative DNS resolver/server
+
+### Flow
+
+**Client DNS resolver** > **Recursive DNS resolver/server** > **Iterative DNS resolver/server**
