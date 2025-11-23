@@ -17,7 +17,7 @@
 
 ### Flow
 
-**Client DNS resolver** > **Recursive DNS resolver/server** > **Iterative DNS resolver/server**
+**Client DNS resolver** > **Recursive DNS resolver/server (often, it is Internet Service Provider (ISP) resolver)** > **Iterative DNS resolver/server**
 
 ### General
 
