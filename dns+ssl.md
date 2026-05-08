@@ -4,6 +4,10 @@
 2. requests go to ALB with the IP
 3. ALB has cert attached and makes hostname based routing
 
+---
+
+**Important: ALB routing doesn't require ssl, only Host header**
+
 # Different domains to serve SSL trafic over same IP
 
 - Each domain has its own ssl cert
